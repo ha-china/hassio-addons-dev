@@ -18,7 +18,7 @@ fi
 
 # 启动 Sherpa-ONNX WebSocket 服务器
 /k2fsa/venv/bin/python /k2fsa/python-api-examples/non_streaming_server.py \
-    --port 6006 \
+    --port 6008 \
     --tokens /config/addons_config/k2fsa/tokens.txt \
     --encoder /config/addons_config/k2fsa/encoder-epoch-12-avg-4.onnx \
     --decoder /config/addons_config/k2fsa/decoder-epoch-12-avg-4.onnx \
