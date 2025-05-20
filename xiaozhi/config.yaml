@@ -1,0 +1,29 @@
+{
+  "name": "xiaozhi MCP",
+  "version": "v0.0.1",  # Updated version
+  "slug": "xiaozhi_mcp",
+  "description": "小智AI对接HA MCP",
+  "url": "https://www.hasscn.top",
+  "arch": [
+    "amd64",
+    "armhf",
+    "armv7",
+    "aarch64",
+    "i386"
+  ],
+  "init": false,
+  "startup": "services",
+  "ingress": true,
+  "hassio_api": true,
+  "hassio_role": "manager",
+  "options": {
+    "TOKEN": "your_wechat_token",
+    "Xiaozhi_MCP_Address": "xiaozhi_MCP_address",
+  },
+  "schema": {
+    "TOKEN": "str",
+    "Xiaozhi_MCP_Address": "str",
+
+  },
+
+}
