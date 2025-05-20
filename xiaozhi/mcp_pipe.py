@@ -183,7 +183,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Get token from environment variable or command line arguments
-    endpoint_url = os.environ.get('XIAOZHI_MCP_ENDPOINT')
+    #endpoint_url = os.environ.get('XIAOZHI_MCP_ENDPOINT')
     if not endpoint_url:
         logger.error("Please set the `XIAOZHI_MCP_ENDPOINT` environment variable")
         sys.exit(1)
