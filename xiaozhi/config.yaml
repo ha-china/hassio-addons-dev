@@ -17,7 +17,7 @@
   "hassio_api": true,
   "hassio_role": "manager",
   "options": {
-    "API_ACCESS_TOKEN": "API_ACCESS_TOKEN"",
+    "API_ACCESS_TOKEN": "API_ACCESS_TOKEN",
     "XIAOZHI_MCP_ENDPOINT": "XIAOZHI_MCP_ENDPOINT"
   },
   "schema": {
