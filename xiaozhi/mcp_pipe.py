@@ -1,4 +1,4 @@
-#!env/bin/python3
+#!/app/.venv/bin/python3
 # -*- coding: utf-8 -*-
 
 """
@@ -20,13 +20,6 @@ import os
 import signal
 import sys
 import random
-import json
-with open('/data/options.json', 'r', encoding='utf-8') as options_file:
-    options = json.load(options_file)
-
-# Get variables from options
-TOKEN = options.get("TOKEN")  
-endpoint_url = options.get("Xiaozhi_MCP_Address")  
 
 # Configure logging
 logging.basicConfig(
@@ -177,13 +170,13 @@ if __name__ == "__main__":
     signal.signal(signal.SIGINT, signal_handler)
 
     # mcp_script
-    ha_endpoint_url = 'http://homeassistant.local:8123/mcp_server/sse'
+    ha_endpoint_url = os.environ.get('HA_MCP_ENDPOINT')
     if not ha_endpoint_url :
         logger.error("Please set the `HA_MCP_ENDPOINT` environment variable")
         sys.exit(1)
 
     # Get token from environment variable or command line arguments
-    #endpoint_url = os.environ.get('XIAOZHI_MCP_ENDPOINT')
+    endpoint_url = os.environ.get('XIAOZHI_MCP_ENDPOINT')
     if not endpoint_url:
         logger.error("Please set the `XIAOZHI_MCP_ENDPOINT` environment variable")
         sys.exit(1)
