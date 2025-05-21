@@ -17,15 +17,11 @@
   "hassio_api": true,
   "hassio_role": "manager",
   "options": {
-    "API_ACCESS_TOKEN": "API_ACCESS_TOKEN",
-    "XIAOZHI_MCP_ENDPOINT": "XIAOZHI_MCP_ENDPOINT",
+    "API_ACCESS_TOKEN": "API_ACCESS_TOKEN"",
+    "XIAOZHI_MCP_ENDPOINT": "XIAOZHI_MCP_ENDPOINT"
   },
   "schema": {
     "API_ACCESS_TOKEN": "str",
-    "XIAOZHI_MCP_ENDPOINT": "str",
-  },
-  "environment": {
-    "API_ACCESS_TOKEN": "!secret api_access_token",
-    "XIAOZHI_MCP_ENDPOINT": "!secret xiaozhi_mcp_endpoint"
+    "XIAOZHI_MCP_ENDPOINT": "str"
   }
 }

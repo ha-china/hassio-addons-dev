@@ -20,6 +20,17 @@ import os
 import signal
 import sys
 import random
+import json
+with open('/data/options.json', 'r', encoding='utf-8') as options_file:
+    options = json.load(options_file)
+
+# Get variables from options
+API_ACCESS_TOKEN = options.get("API_ACCESS_TOKEN") 
+XIAOZHI_MCP_ENDPOINT = options.get("XIAOZHI_MCP_ENDPOINT")
+
+os.environ["API_ACCESS_TOKEN"] = API_ACCESS_TOKEN
+os.environ["XIAOZHI_MCP_ENDPOINT"] = XIAOZHI_MCP_ENDPOINT
+
 
 # Configure logging
 logging.basicConfig(
