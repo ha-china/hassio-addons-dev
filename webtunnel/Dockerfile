@@ -2,7 +2,8 @@
 FROM docker.m.daocloud.io/library/alpine:3.21.2
 ARG BUILD_ARCH
 # 安装所需软件
-RUN apk add --no-cache wget tar
+RUN apk add --no-cache wget tar libstdc++ libgcc libc6-compat
+
 
 # 设置工作目录
 WORKDIR /tmp
