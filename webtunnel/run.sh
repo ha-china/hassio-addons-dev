@@ -1,2 +1,3 @@
 cd /
-./WebTunnelCore --config=/data/.webtunnel   
+ls -lh
+/WebTunnelCore --config=/data/.webtunnel   
