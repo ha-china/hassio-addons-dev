@@ -1,45 +1,63 @@
-# 🌐 节点小宝 - 客户端
+# 🌐 WebTunnel - 内网穿透客户端
 
-**节点小宝** 是一个用于内网穿透服务的 Home Assistant 插件。此版本支持 **amd64**、**i386** 和 **aarch64**。
+**WebTunnel** 是一个专为 Home Assistant 设计的高效内网穿透插件，支持 **amd64** 和 **aarch64** 架构。
 
-## ✨ 功能
+## ✨ 核心功能
 
-- ⚙️ **简单易用的配置**
-- 🔄 **支持内网穿透**
+- ⚙️ **极简配置**：开箱即用，快速部署
+- 🔄 **稳定穿透**：支持多种协议，稳定可靠
+- 🔒 **安全加密**：采用先进加密技术，保障数据安全
+- 🌍 **多场景应用**：满足远程访问、设备管理等需求
 
-## 📥 安装步骤
+## 🚀 安装指南
 
-1. 在 Home Assistant 中，打开 **“Add-ons”** 页面。
-2. 🔍 搜索 **“节点小宝”** 并点击安装。
-3. ▶️ 启动插件。
-4. 在日志里查看配对码
+1. 在 Home Assistant 中，进入 **“Add-ons”** 页面
+2. 🔍 搜索 **“WebTunnel”** 并点击安装
+3. ▶️ 启动插件
+4. 🌐 访问 [WebTunnel 控制台](https://c.pgrm.top?s=gjhAXN) 完成账号注册
 
-## 📖 使用说明
+## 📖 功能说明
 
-基础镜像是 **Ubuntu**。  
-[使用说明请按照节点小宝说明使用](https://iepose.com/helpcenter_v3/Docker%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B.html#x86_64)。
+### 支持协议
+- 🖥️ 远程桌面
+- 💻 SSH 终端
+- 🌐 网站穿透
+- 🔌 端口映射
+- 📱 远程应用
 
-1.1.0 版本已经更改了基础静像，大大缩减尺寸，方便空间不足的朋友安装
+### 特色功能
+- 🖥️ 网页版远程桌面
+- 💻 网页版 SSH 终端
+- 🔒 安全加密传输
+- ⚡ 快速连接
 
-## 📜 变更日志
+## 📱 关注我们
 
-请查看 [CHANGELOG.md](CHANGELOG.md) 以获取更新信息。
-
-## 📄 许可证
-
-本项目遵循 **MIT 许可证**。
-
-📱 扫描下面的二维码，关注我！如有任何问题或建议，欢迎随时留言。
+扫描下方二维码，获取最新资讯和技术支持：
 
 ![QR Code](https://gitee.com/desmond_GT/hassio-addons/raw/main/WeChat_QRCode.png)
 
-## ☕ 赞助支持
+## ☕ 支持我们
 
-如果您觉得我花费大量时间维护这个库对您有帮助，欢迎请我喝杯奶茶，您的支持将是我持续改进的动力！
+如果您觉得这个项目对您有帮助，欢迎通过以下方式支持我们：
 
-<div style="display: flex; justify-content: space-between;">
-  <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/Ali_Pay.jpg" height="350px" />
-  <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/WeChat_Pay.jpg" height="350px" />
-</div> 💖
+<div style="display: flex; justify-content: space-around; margin: 20px 0;">
+  <div style="text-align: center;">
+    <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/Ali_Pay.jpg" height="300px" />
+    <p>支付宝支持</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/WeChat_Pay.jpg" height="300px" />
+    <p>微信支持</p>
+  </div>
+</div>
 
-感谢您的支持与鼓励！
+💖 您的支持将是我们持续改进的动力！
+
+## 📞 联系我们
+
+如有任何问题或建议，欢迎随时通过以下方式联系我们：
+- 📧 邮箱：support@hasscn.top
+- 🌐 官网：[https://www.hasscn.top](https://www.hasscn.top)
+
+感谢您的支持与信任！
