@@ -17,6 +17,7 @@ RUN case "$BUILD_ARCH" in \
     mv WebTunnelCore /WebTunnelCore && \
     chmod +x "/WebTunnelCore" && \
     rm -rf /tmp/*
-
+    
+WORKDIR /
 # 设置入口点
-ENTRYPOINT ["/WebTunnelCore", "--config", "/data/.webtunnel"]
+CMD ["/WebTunnelCore", "--config", "/data/.webtunnel"]
