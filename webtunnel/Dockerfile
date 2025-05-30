@@ -9,7 +9,7 @@ WORKDIR /tmp
 
 # 根据架构下载对应文件
 RUN case "$BUILD_ARCH" in \
-    amd64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-x64-250417.tar.gz ;; \
+    x86_64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-x64-250417.tar.gz ;; \
     aarch64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-arm64-250417.tar.gz ;; \
     *) echo "Unsupported architecture $BUILD_ARCH" && exit 1 ;; \
     esac && \
