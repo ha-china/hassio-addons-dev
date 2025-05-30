@@ -22,4 +22,4 @@ COPY run.sh /run.sh
 RUN chmod +x /run.sh
     
 # 设置入口点
-ENTRYPOINT ["/bin/sh", "/run.sh"]
+ENTRYPOINT ["/WebTunnelCore", "--config=/data/.webtunnel"]
