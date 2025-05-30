@@ -33,31 +33,15 @@
 
 ## 📱 关注我们
 
-扫描下方二维码，获取最新资讯和技术支持：
+📱 扫描下面的二维码，关注我！如有任何问题或建议，欢迎随时留言。
 
 ![QR Code](https://gitee.com/desmond_GT/hassio-addons/raw/main/WeChat_QRCode.png)
 
-## ☕ 支持我们
+## ☕ 赞助支持
 
-如果您觉得这个项目对您有帮助，欢迎通过以下方式支持我们：
+如果您觉得我花费大量时间维护这个库对您有帮助，欢迎请我喝杯奶茶，您的支持将是我持续改进的动力！
 
-<div style="display: flex; justify-content: space-around; margin: 20px 0;">
-  <div style="text-align: center;">
-    <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/Ali_Pay.jpg" height="300px" />
-    <p>支付宝支持</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/WeChat_Pay.jpg" height="300px" />
-    <p>微信支持</p>
-  </div>
-</div>
-
-💖 您的支持将是我们持续改进的动力！
-
-## 📞 联系我们
-
-如有任何问题或建议，欢迎随时通过以下方式联系我们：
-- 📧 邮箱：support@hasscn.top
-- 🌐 官网：[https://www.hasscn.top](https://www.hasscn.top)
-
-感谢您的支持与信任！
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/Ali_Pay.jpg" height="350px" />
+  <img src="https://gitee.com/desmond_GT/hassio-addons/raw/main/1_readme/WeChat_Pay.jpg" height="350px" />
+</div> 💖
