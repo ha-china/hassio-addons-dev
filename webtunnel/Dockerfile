@@ -20,4 +20,4 @@ RUN case "$BUILD_ARCH" in \
 
 WORKDIR /
 # 设置入口点
-CMD ["/bin/sh", "/WebTunnelCore", "--config", "/data/.webtunnel"]
+CMD ["./WebTunnelCore", "--config", "/data/.webtunnel"]
