@@ -3,5 +3,8 @@
 cd /
 chmod +x WebTunnelCore
 
-ls -lh
+
+ldd WebTunnelCore
+file WebTunnelCore
+
 ./WebTunnelCore --config=/data/.webtunnel   
