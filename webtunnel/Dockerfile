@@ -1,8 +1,6 @@
 # 使用指定的基础镜像
-FROM docker.m.daocloud.io/library/alpine:3.21.3
+FROM docker.m.daocloud.io/library/alpine:3.21.2
 
-# 定义构建参数
-ARG BUILD_ARCH
 
 # 安装所需软件
 RUN apk add --no-cache wget
