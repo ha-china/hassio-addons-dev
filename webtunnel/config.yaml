@@ -21,6 +21,6 @@
   "boot": "manual",
   "restart": "always",
   "host_network": true,
-  "webui": "http://[HOST]:[PORT:9118]"
+  "webui": "http://[HOST]:[PORT:9600]"
 }
 

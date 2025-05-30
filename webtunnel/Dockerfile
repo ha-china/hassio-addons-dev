@@ -15,8 +15,8 @@ RUN case "$BUILD_ARCH" in \
     esac && \
     tar -xzvf WebTunnelCore.tar.gz && \
     mv WebTunnelCore /WebTunnelCore && \
-    chmod +x "/WebTunnelCore" && \
-    rm -rf /tmp/*
+    chmod +x "/WebTunnelCore" \
+    && rm -rf /tmp/*
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
