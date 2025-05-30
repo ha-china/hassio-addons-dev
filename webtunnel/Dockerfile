@@ -26,4 +26,4 @@ RUN case "$BUILD_ARCH" in \
 #RUN chmod +x /run.sh
 
 # 设置入口点
-ENTRYPOINT ["/WebTunnelCore"]
+ENTRYPOINT ["/WebTunnelCore", "--config", "/data/.webtunnel"]
