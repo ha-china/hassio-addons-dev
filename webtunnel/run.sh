@@ -1,2 +1,2 @@
-cd /owjdxb/bin/
-./owjdxb -s --store=/data
+cd /
+./WebTunnelCore --config=/data/.webtunnel   
