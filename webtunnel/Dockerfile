@@ -1,6 +1,6 @@
 # 使用指定的基础镜像
 FROM docker.m.daocloud.io/library/alpine:3.21.2
-
+ARG BUILD_ARCH
 # 安装所需软件
 RUN apk add --no-cache wget tar
 
@@ -9,7 +9,7 @@ WORKDIR /tmp
 
 # 根据架构下载对应文件
 RUN case "$BUILD_ARCH" in \
-    x86_64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-x64-250417.tar.gz ;; \
+    amd64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-x64-250417.tar.gz ;; \
     aarch64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-arm64-250417.tar.gz ;; \
     *) echo "Unsupported architecture $BUILD_ARCH" && exit 1 ;; \
     esac && \
