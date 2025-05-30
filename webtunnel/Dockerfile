@@ -1,9 +1,8 @@
 # 使用指定的基础镜像
 FROM docker.m.daocloud.io/library/alpine:3.21.2
 
-
 # 安装所需软件
-RUN apk add --no-cache wget
+RUN apk add --no-cache wget tar
 
 # 设置工作目录
 WORKDIR /tmp
@@ -16,12 +15,8 @@ RUN case "$BUILD_ARCH" in \
     esac && \
     tar -xzvf WebTunnelCore.tar.gz && \
     mv WebTunnelCore /WebTunnelCore && \
-    chmod +x "/WebTunnelCore" \
-    && rm -rf /tmp/*
-
-# 复制并设置 run.sh 脚本
-#COPY run.sh /run.sh
-#RUN chmod +x /run.sh
+    chmod +x "/WebTunnelCore" && \
+    rm -rf /tmp/*
 
 # 设置入口点
 ENTRYPOINT ["/WebTunnelCore", "--config", "/data/.webtunnel"]
