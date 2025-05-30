@@ -13,8 +13,7 @@ RUN case "$BUILD_ARCH" in \
     aarch64) wget -O WebTunnelCore.tar.gz https://w.pgrm.top/download/linux/WebTunnelCore-linux-arm64-250417.tar.gz ;; \
     *) echo "Unsupported architecture $BUILD_ARCH" && exit 1 ;; \
     esac && \
-    tar -xzvf WebTunnelCore.tar.gz && \
-    mv WebTunnelCore /WebTunnelCore && \
+    tar -xzvf WebTunnelCore.tar.gz -C / && \
     chmod +x "/WebTunnelCore" \
     && rm -rf /tmp/*
 
