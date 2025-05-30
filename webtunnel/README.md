@@ -15,6 +15,7 @@
 2. 🔍 搜索 **“WebTunnel”** 并点击安装
 3. ▶️ 启动插件
 4. 🌐 访问 [WebTunnel 控制台](https://c.pgrm.top?s=gjhAXN) 完成账号注册
+5. [产口功能介绍](https://pgrm.top/index.html#overview)
 
 ## 📖 功能说明
 
