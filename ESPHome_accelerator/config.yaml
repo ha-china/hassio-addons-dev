@@ -1,0 +1,42 @@
+{
+  "name": "ESPHome Accelerator",
+  "version": "v1.0.0",
+  "slug": "ESPHome Accelerator",
+  "description": "ESPHome 加速器，可以让ESPHome更快速的编译固件",
+  "url": "https://www.hasscn.top",
+  "arch": [
+    "amd64",
+    "armhf",
+    "armv7",
+    "aarch64",
+    "i386"
+  ],
+  "init": false,
+  "startup": "services",
+  "boot": "manual",
+  "ingress": true,
+  "panel_icon": "mdi:vote",
+  "map": [
+    "config:rw"
+  ],
+  "privileged": [
+    "NET_ADMIN",
+    "SYS_ADMIN",
+    "SYS_RAWIO",
+    "SYS_TIME",
+    "SYS_NICE"
+  ],
+  "apparmor": false,
+  "host_dbus": true,
+  "docker_api": true,
+  "hassio_api": true,
+  "homeassistant_api": true,
+  "host_network": true,
+  "hassio_role": "manager",
+  "options": {
+    "chips": "esp8266,esp32,esp32s2,esp32s3,esp32c3,esp32c6,esp32c5,esp32h2,esp32p4"
+  },
+  "schema": {
+    "chips": "match(^\\w*$)"
+  }
+}
